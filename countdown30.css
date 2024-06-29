@@ -1,0 +1,87 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'poppins',sans-serif;
+ box-sizing: border-box;
+}
+.container{
+ width: 100w;
+ height: 100vh;
+ background-color: black;
+ background-position: center;
+ background-size: cover;
+ padding: 0 4%;
+ position: relative;
+}
+.logo{
+ width: 120px;
+ padding: 30px 0;
+ cursor: pointer;
+}
+.content{
+bottom: 150PX;
+ position: absolute;
+ color: #fff;
+ margin-top: 200px;
+}
+.content h1{
+ font-size: 50px;
+ font-weight: 200;
+
+}
+.content h1 span{
+ color: aqua;
+
+}
+.content button{
+ background: transparent;
+ border: 2px solid #fff;
+ outline: none;
+ padding: 12px 25px;
+ color: #fff;
+ margin-top: 70px;
+ font-size: 35px;
+}
+.Launch-time{
+ display: flex; 
+}
+.Launch-time div{
+ flex-basis: 250px;
+}
+
+.Launch-time div p{
+ font-size: 30px;
+ margin-bottom: 25px;
+ margin-top: 10px;
+
+}
+.Launch-time span{
+ font-size: 65px;
+
+}
+.content p{
+ font-size: 30px;
+ margin-top: -250px;
+
+}
+
+
+.rocket{
+ width: 500px;
+ color: black;
+ position: absolute;
+ right: 10%;
+ bottom: 0;
+ animation: rocket 4s linear infinite;
+
+}
+@keyframes rocket{
+ 0%{
+  bottom: 0;
+  opacity: 0;
+ }
+ 100%{
+  bottom: 105%;
+  opacity: 1;
+ }
+}

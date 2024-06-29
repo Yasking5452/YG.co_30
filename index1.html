@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>YG.co</title>
+ <link href="countdown30.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <div class="container">
+  <img src="9af2be34-01a3-4f56-9ec3-4323ca2f5c12.jfif" class="logo">
+  <div class="content">
+   <p>PRODUCT/SERVICE</p>
+   <H1>We are <span>Launching</span> On</H1>
+   <div class="Launch-time">
+    <div>
+     
+     <p>1st August</p>
+     
+    </div>
+    <div>
+ 
+    </div>
+   </div>
+ 
+  </div>
+  <img src="220_F_713367312_PBgUbGWqitFW6M2xyiBlYeuGglcsGn3S.jpg" class="rocket">
+ </div>
+ <script>
+  var countDownDate = new Date("Aug 1, 2024 00:00:00").getTime();
+  var x = setInterval(function(){
+   var now = new Date().getTime();
+   var distance = countDownDate - now;
+
+   var days = math.floor(distance / (1000 * 60* 60* 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) /1000);
+
+   document.getElementById("days").innerHTML = days;
+   document.getElementById("hours").innerHTML = hours;
+   document.getElementById("minutes").innerHTML = minutes;
+   document.getElementById("seconds").innerHTML = seconds;
+
+  },1000);
+
+
+ </script>
+ 
+</body>
+</html>
